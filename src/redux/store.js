@@ -16,6 +16,7 @@ const persistConfig = { key: 'contacts', storage };
 
 const persistedReduсer = persistReducer(persistConfig, contactsReducer);
 
+// Створюємо Store
 const store = configureStore({
   reducer: { contacts: persistedReduсer },
   middleware: getDefaultMiddleware =>

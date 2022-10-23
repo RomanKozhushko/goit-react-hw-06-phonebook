@@ -1,8 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { addContact } from '../../redux/contactsSlice';
-// styled components
 import { InputItem, FormDecoration, Label, Button } from './InputForm.styled';
-// other libs
+
 import { nanoid } from 'nanoid';
 import { Formik, Form } from 'formik';
 
