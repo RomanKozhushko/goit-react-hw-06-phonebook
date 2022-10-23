@@ -15,10 +15,10 @@ background-image: linear-gradient(to right, white, steelblue);
 border: 0;
 font-size: 22px;
 font-weight: 600;
-width: 232px;
+max-width: 282px;
 color: steelblue;
 margin-right: auto;
-margin-left: 106px;
+margin-left: 46px;
 
 `
 export const FindContacts = styled.h3`

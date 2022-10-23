@@ -19,7 +19,7 @@ flex-direction: column;
 margin-bottom: 10px;
 font-size: 24px;
 height: 25px;
-max-width: 350px;
+max-width: 300px;
 margin-left: auto;
 color: steelblue;
 
@@ -34,8 +34,8 @@ color: steelblue;
 }
 `
 export const FormDecoration = styled.div`
-
 margin-left: 100px;
+margin-right: 30px;
 
 `
 export const Label = styled.label`
