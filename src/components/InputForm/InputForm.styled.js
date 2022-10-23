@@ -45,7 +45,7 @@ margin-bottom: 8px;
 `
 
 export const Button = styled.button`
-width: 360px;
+width: 366px;
 font-size: 16px;
 height: 30px;
 font-weight: bold;
