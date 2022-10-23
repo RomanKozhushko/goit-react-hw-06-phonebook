@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { addContact } from '../Redux/contactsSlice';
 // styled components
-import { InputItem } from "./InputForm.styled";
+import { InputItem, FormDecoration, Label, Button } from "./InputForm.styled";
 // other libs
 import { nanoid } from 'nanoid';
 import { Formik, Form } from 'formik';
@@ -20,22 +20,25 @@ export function InputForm () {
     }
         return (
             <Formik initialValues={{ name: "", number: "" }} onSubmit={onSubmit}>
-                <Form><label>Name
+                <Form>
+                    <FormDecoration>
+                    <Label>Name
                 <InputItem
                     type="text"
                     name="name"
                     pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
                     title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
                     required
-                /></label>
-                <label>Number<InputItem
+                /></Label>
+                <Label>Number<InputItem
                     type="tel"
                     name="number"
                     pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
                     title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
                     required
-                    /></label>
-                    <button type="submit">Add contact</button>
+                    /></Label>
+                    <Button type="submit">Add contact</Button>
+                    </FormDecoration>
                 </Form>
             </Formik>
         )

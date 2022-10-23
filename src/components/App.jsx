@@ -7,6 +7,7 @@ import { ContactList } from './ContactList/ContactList';
 import { PhonebookBox } from './Phonebook/Phonebook.styled';
 import { InputFormBox } from './InputForm/InputForm.styled';
 import { ContactListBox } from './ContactList/ContactList.styled';
+import { Head } from './App.styled';
 
 export function App() {
   const contacts = useSelector(store => store.contacts.items);
@@ -18,12 +19,12 @@ export function App() {
   return (
     <PhonebookBox>
       <InputFormBox>
-        <h1 style={{textAlign: 'center'}}>Phonebook</h1>
+        <Head>Phonebook</Head>
         <InputForm/>
       </InputFormBox>
       <ContactListBox>
         <Filter/>
-          <ContactList contacts={filteredContacts}/> :
+          <ContactList contacts={filteredContacts}/>
       </ContactListBox>
     </PhonebookBox>
   );
