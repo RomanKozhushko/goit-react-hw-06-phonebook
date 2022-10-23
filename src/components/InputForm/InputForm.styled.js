@@ -21,6 +21,7 @@ font-size: 24px;
 height: 25px;
 max-width: 350px;
 margin-left: auto;
+color: steelblue;
 
 :invalid {
   border: 2px solid white;
