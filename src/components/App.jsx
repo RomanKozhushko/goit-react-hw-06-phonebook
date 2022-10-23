@@ -1,10 +1,7 @@
 import { useSelector } from 'react-redux';
-// components
 import { InputForm } from './InputForm/InputForm';
 import { Filter } from './Filter/Filter';
 import { ContactList } from './ContactList/ContactList';
-// styled components
-
 import { InputFormBox } from './InputForm/InputForm.styled';
 import { ContactListBox } from './ContactList/ContactList.styled';
 import { Head, PhonebookBox } from './App.styled';
